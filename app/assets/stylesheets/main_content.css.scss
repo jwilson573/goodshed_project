@@ -1,0 +1,329 @@
+// Begin Main Content CSS
+#container{
+    // background-color: #8e8d8b;
+    
+    font-size: 100%;
+    q{
+        font-style: oblique;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    .row {
+        background-color: #2B2B2B;
+    }
+}
+#box_container{
+    width: 100%;
+    height: 100%;
+    margin: 0px -15px;
+    padding: 10px;
+    overflow: hidden;
+    text-shadow: 1px 1px black;
+}
+.box{
+    float: left;
+    height: 100%;
+    padding-top: 15%;
+    padding-right: 5px;
+    padding-bottom: 15%;
+    padding-left: 5px;
+    // color: #b2a07b;
+    color: white;
+    
+    vertical-align: top;
+    text-align: center;
+    border-radius: 4px;
+    text-shadow: 2px 2px black;
+    box-shadow: 1px 2px 2px 1px #262629;
+    background-size: cover;
+    min-height: 600px;
+    max-height: 600px;
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5em;
+        font-weight: bold;    
+    }
+}
+#body_box_1{
+    background: url('/assets/gear.jpg');
+    background-size: 155% 100%;
+}
+#body_box_2{
+    background: url('/assets/your_sound.jpg');
+    background-size: 155% 100%;
+    background-repeat:no-repeat;
+    span{
+        font-size: 3.5rem;
+    }
+    h3{
+        
+        margin-top: 0px;
+    }
+    
+}
+#body_box_3{
+    background: url('/assets/gear1.jpg');
+    box-shadow: 1px 2px 2px 1px #262629;
+    border-radius: 4px;
+    overflow: hidden;
+    p{
+        margin-bottom: 10%;
+    }
+}
+.smll_txt{
+    line-height: 1.2em;
+}
+.good_btn{
+    background-color: #262626;
+    color: white;
+    border-radius: 4px;
+    min-height: 50px;;
+    min-width: 100px;
+}
+.logos{
+    width: 170px;
+    display: inline-block;
+    position: relative;
+    
+}
+.box_logos{
+    width: 100%;
+    height: 125px;
+}
+#gear_banner{
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: .5em;
+        
+    }
+    
+    .box{
+        padding-top: 5%;
+        margin-left: 4.2%;
+        
+        p{
+            font-size: 1rem;
+        }
+    }
+    #body_box_1{
+        h2{
+            font-size: 5rem;
+        }
+    }
+}
+@media (max-width: 1023px){
+    body{
+        font-size: .8em;
+    }
+}
+// End Main Content CSS
+
+// Begin Header CSS
+
+$green: #00FF00;
+
+#header{
+    // background-color: #262626;
+    background-color: #000;
+    width:100%; 
+    padding: 20px 10px;
+    color: #b2a07b;
+    font-size: 100%;
+    h1{
+        margin: 0px;
+    }
+}
+
+#header_end{
+    height: 5px;
+    
+    background-color: #b2a078;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    box-shadow: 0 2px 2px #262629
+}
+
+.logreg{
+    width: 103px;
+    float: right;
+}
+
+.header_center{
+    width: 100%;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.header_center div{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    display: inline-block;
+    
+    font-size: 5em;
+}
+
+
+li{
+    display: inline;
+    
+}
+.header_center a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 14.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  
+}
+
+.main_logo{
+    width: 40%;
+    max-height: 170px;
+}
+
+
+a:link {
+    color: #b2a07b;
+    border-bottom: 1px solid transparent;
+}
+
+a:visited {
+    color: #b2a07b;
+    border-bottom: 1px solid transparent;
+}
+
+.header_center a:focus {
+    border-bottom: 1px solid;
+    background: #515151;
+}
+
+.header_center a:hover {
+    border-bottom: 1px solid;
+    border-radius: 3px;     
+    background: #b2a078;
+    color: white;
+}   
+
+.header_center a:active {
+    background: #FFFFFF;
+    color: #CDFEAA;
+}
+@media (max-width: 768px){
+    #header{
+        font-size: .5em;
+    }
+    .dt_nav{
+        display: none;
+    }
+    .logreg{
+        display: none;
+    }
+}
+
+// End Header CSS
+
+// Begin Footer CSS
+#footer{
+    // background-color: #262626;
+    background-color: #000;
+    width: 100%;    
+    padding: 20px 10px;
+    color: #b2a07b;
+    p{
+        text-align: center;
+    }
+}
+#footer_end{
+    height: 5px;
+    background-color: #b2a078;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    box-shadow: 0 2px 2px #262629
+}
+
+// End Footer CSS
+
+// Begin Sessions (Login) CSS
+#login-container{
+    
+    min-height: 600px;
+    max-width: 300px;
+}
+.login_form{
+height: 100%;
+min-height: 75%;
+}
+
+// Begin Registration Form CSS
+
+
+#contact-form {
+    background-color:rgba(72,72,72,0.7);
+    padding: 10px 20px 10px 20px;
+    min-width: 350px;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    h1{
+         color: white;
+         text-align: left;
+     }
+    label{
+        color: white;
+    }
+ }
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea,   
+ #contact-form label { 
+    font-size: 15px;  
+    margin-bottom: 2px;
+    font-family: Arial, san-serif;
+ } 
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea { 
+    width:100%;
+    background: #fff;
+    border: 0; 
+    -moz-border-radius: 4px;  
+    -webkit-border-radius: 4px;  
+    border-radius: 4px;
+    margin-bottom: 25px;  
+    padding: 5px;  
+ } 
+ 
+ #form_pic{
+     width: 20%;
+     margin-left: 5%;
+     margin-top: 1%;
+     margin-right: 3%;
+     border-radius: 4px;
+     vertical-align: top;
+ }
+ 
+ 
+// End Registration Form CSS 

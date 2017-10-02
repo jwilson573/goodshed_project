@@ -1,0 +1,30 @@
+
+
+<header>
+    <div id="header" class="col-md-12">
+        <div class="logreg">
+            <% if session[:user_id] %>
+                <a href="/logout" data-method="delete">Logout</a>
+                <a href="/<%= session[:user_id] %>/profile">View Profile</a>
+            <% else %>
+                <a href="/login">Login</a> |
+                <a href="/register"> Register</a>
+            <% end %>
+        </div>
+        <div class="header_center">
+            <div>
+                <img class="main_logo" src="/assets/new_logo_bad_S_v2.png" alt="goodshed_logo.jpeg">
+                <ul class="dt_nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gear">Gear</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Media</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="">Rates</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="header_end" class="col-md-12">
+    </div>
+</header>
