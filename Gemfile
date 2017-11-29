@@ -34,10 +34,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'hirb'
-# gem for carousel
-gem 'owlcarousel-rails'
 # jQuery gem
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# gem for carousel
+gem "jquery-slick-rails"
+# gem 'owlcarousel-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

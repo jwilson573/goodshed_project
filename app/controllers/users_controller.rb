@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
+    before_action :require_login, except: [:index, :create]
     before_action :auth, except: [:create, :index]
+    
     def index
         
     end
@@ -55,6 +57,7 @@ class UsersController < ApplicationController
         end
 
         def auth
+            puts "HEY", current_user
             return redirect_to user_path(current_user) unless current_user.id == params[:id].to_i
         end
         

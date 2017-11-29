@@ -15,8 +15,7 @@
 //= require popper
 //= require bootstrap
 //= require rails-ujs
-//= require owl.carousel
-//= require initialize
+//= require jquery.slick
 //= require turbolinks
 //= require_tree .
 

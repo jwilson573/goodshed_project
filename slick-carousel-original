@@ -1,0 +1,22 @@
+<script src="/assets/slick.js"></script>
+<div class="row">
+    <div id="gear_banner">
+    <div class="slider">
+        <div id="left1" class="left">&lt;</div>
+        <div id="right1" class="right">&gt;</div>
+            <div class="track" id="track1">
+                
+                <img id="first_logo"  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/gibson.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos">
+                <img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos">
+            </div>
+        </div>
+    </div>
+    <div id="banner_end">
+    </div>
+</div>

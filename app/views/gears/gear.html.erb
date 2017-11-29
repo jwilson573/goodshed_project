@@ -1,68 +1,83 @@
 
-
-
-<div class = "row" id="track1">
+<div class="row carousel_row">
+  <div class="col-md-1"></div>
+  <div class = "my_slick col-md-10" id="track1">
+      <div class="brand" data-brand="fender"><img  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="DW"><img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="gibson"><img  src="/assets/gibson.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="audix"><img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="shure"><img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="neumann"><img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="akg"><img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div class="brand" data-brand="atech"><img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos item"></div>
+  </div>
+  <div class="col-md-1"></div>
+</div>     
     
-    <img  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/gibson.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos item">
-    <img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos item">
-    <img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos item">
+<div id="footer_end">
 </div>
-        
-    
-<div id="banner_end">
-</div>
+<div class="gear_box">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
 
-
-<%# <div class="row">
-        
-            <div class='slider track'>             
-                <img id="first_logo"  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/gibson.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos">
-                <img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos">
-                <img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos">
-            </div>
-    
-    <div id="banner_end">
+        <%# DW Drums Section %>
+        <div id="brand_div" class="active" data-brand="DW">
+            <h1>DW Drums</h1>
+            <img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos item">
+        </div>
+        <%# End DW Drums Section %>
+        <div id="brand_div" data-brand="fender">Fender Desc</div>
+        <div id="brand_div" data-brand="gibson">Gibson Desc</div>
+        <div id="brand_div" data-brand="audix">Audix Desc</div>
+        <div id="brand_div" data-brand="shure">Shure Desc</div>
+        <div id="brand_div" data-brand="neumann">Neumann Desc</div>
+        <div id="brand_div" data-brand="akg">AKG Desc</div>
+        <%# Audio Technica Section %>
+        <div id="brand_div" data-brand="atech">
+            <ul>
+                <li><h3>Audio Technica AT3035</h3></li>
+                <li>Audio Technica Pro37 / Qty: 2</li>
+            </ul>
+        </div>
+        <%# End Audio Technica Section %>
     </div>
-</div> %>
-<%# <script type="text/javascript">
-    $(document).ready(function(){
-    $('.track').slick({
+    <div class="col-md-1"></div>
+</div>
+
+<script type="text/javascript">
+  var createSlick = function () {
+    $('.my_slick').not('.slick-initialized').slick({
         centerMode: true,
-        variableWidth: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 5,
         responsive: [
-          {
+        {
             breakpoint: 768,
             settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
             }
-          },
-          {
+        },
+        {
             breakpoint: 480,
             settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
             }
-          }
+        }
         ]
-      });
+    });
+}
 
-
-});
-</script> %>
+  $(document).ready(function() {
+      createSlick();
+      $('.brand').on('click', function(e){
+          let brand = $(this).data('brand');
+          $('.active').toggleClass('active');
+          $('[data-brand="' + brand + '"]').toggleClass('active')
+          
+          
+      })
+  });
+</script>

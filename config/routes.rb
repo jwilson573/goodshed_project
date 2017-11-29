@@ -16,4 +16,13 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#index'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
+
+
+  # Testimonial Routes
+  get '/testimonials' => 'testimonials#index'
+  
+
+
+
+
 end

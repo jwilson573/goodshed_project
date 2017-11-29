@@ -1,0 +1,74 @@
+
+
+<div class="row">
+  <div class="col-lg-1"></div>
+  <div class = "my_slick col-lg-10" id="track1">
+      <div><img  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/gibson.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos item"></div>
+      <div><img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos item"></div>
+  </div>
+  <div class="col-lg-1"></div>
+</div>     
+    
+<div id="footer_end">
+</div>
+
+<%# <div class="row">
+        
+            <div class='slider track'>             
+                <img id="first_logo"  src="/assets/fender_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/DWstickerWhite.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/gibson.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/audix_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/shure_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/neumann_logo.png" alt="fender_logo.png" class="logos">
+                <img  src="/assets/akg_logo.png" alt="fender_logo.png" class="logos">
+                <img  id="last_logo" src="/assets/at_logo.png" alt="fender_logo.png" class="logos">
+            </div>
+    
+    <div id="banner_end">
+    </div>
+</div> %>
+<script type="text/javascript">
+  var createSlick = function () {
+    $('.my_slick').not('.slick-initialized').slick({
+        centerMode: true,
+        slidesToShow: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+}
+
+  // $(document).ready(function(){
+  //     createSlick();
+  // });
+
+  // $(document).not('.slick-initialized', function() {
+  //     createSlick();
+  // })
+
+  $(document).ready(function() {
+      createSlick();
+  });
+</script>

@@ -33,3 +33,42 @@
 // $(document).ready(function(){
 //   $('.owl-carousel').owlCarousel();
 // });
+
+var createSlick = function () {
+    $('.my_slick').not('.slick-initialized').slick({
+        centerMode: true,
+        slidesToShow: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+}
+
+// $(document).ready(function(){
+//     createSlick();
+// });
+
+// $(document).not('.slick-initialized', function() {
+//     createSlick();
+// })
+
+$(document).ready(function() {
+    alert(createSlick);
+    createSlick();
+});
+createSlick();
